@@ -1,4 +1,3 @@
-import { toast } from 'react-toastify';
 import { call, fork, put, takeLatest } from 'redux-saga/effects';
 import * as actions from './Actions';
 import * as api from './Api';
