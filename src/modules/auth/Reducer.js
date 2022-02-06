@@ -1,4 +1,3 @@
-import Cookie from 'js-cookie';
 import Types from './Types';
 
 const INITIAL_STATE = {
@@ -12,10 +11,10 @@ export default function auth(state = INITIAL_STATE, action) {
     const { type, payload } = action;
     switch (type) {
         case Types.LOGIN_USER_SUCCESS: {
-            Cookie.set('token', payload.user.data.data.access_token);
+
             return {
                 ...state,
-                token: payload.user.data.data.access_token
+                token: ''
             };
         }
 

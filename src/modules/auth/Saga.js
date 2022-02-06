@@ -3,7 +3,6 @@ import { call, fork, put, takeLatest } from 'redux-saga/effects';
 import * as actions from './Actions';
 import * as api from './Api';
 import Types from './Types';
-import Cookie from 'js-cookie';
 
 // SIGNIN
 

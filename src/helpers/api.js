@@ -1,7 +1,6 @@
 import axios from 'axios';
 
 import { API_URL, LIVE_API_URL, TOKEN } from '../constants';
-import Cookie from 'js-cookie';
 
 const api = axios.create({
     baseURL:
@@ -10,7 +9,7 @@ const api = axios.create({
 });
 
 api.interceptors.request.use((config) => {
-    const token = Cookie.get('token');
+    const token = ''
     const authorizedConfig = { ...config };
     if (token) {
         authorizedConfig.headers.Authorization = `Bearer ${token}`;
