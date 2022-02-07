@@ -28,7 +28,6 @@ const LoginForm = (props) => {
 
         onSubmit: values => {
             dispatch(loginUserAction(values));
-            alert(JSON.stringify(values, null, 2));
         },
     });
 
